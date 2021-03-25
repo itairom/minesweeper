@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mine sweeper</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <body onload="initGame()">
+        <!-- <img src="./img/mine.png" alt="mine"> -->
+
+        <!-- <h1>Mine Sweeper </h1> -->
+        <div class="dashboard">
+            <div class="time">Time:<span class="timer">0</span></div>
+            <!-- <div>Score:<span class=" score">0</span></div> -->
+            <button onclick="resetGame()" class="reset-btn">🙂</button>
+            <div class="levels">
+                <label for="male">Beginner:</label>
+                <input name="level" onclick="setLevel(0) " type="radio" value="Beginner"><br>
+                <label for=" male ">Medium:</label>
+                <input name="level" onclick="setLevel(1) " type="radio" value="Medium"><br>
+                <label for="male ">Expert</label>
+                <input name="level" onclick="setLevel(2) " type="radio" value="Expert"><br>
+            </div>
+
+
+        </div>
+
+        <table class="board ">
+            <tbody class="game-board "></tbody>
+        </table>
+
+
+        <script src="./js/utils.js "></script>
+        <script src="./js/main.js "></script>
+
+    </body>
+
+</html>
