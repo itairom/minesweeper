@@ -1,6 +1,9 @@
 'use strict'
 console.log('utils');
 
+localStorage.setItem("score", 100);
+
+
 function printMat(mat, selector) {
     var strHTML = '<table border="0"><tbody>';
     for (var i = 0; i < mat.length; i++) {
@@ -56,4 +59,10 @@ function setStopwatch() {
     var currTime = Date.now();
     var timer = `Time: ${(currTime - gStartTime) / 1000}`;
     elTimer.innerHTML = timer;
+
 }
+
+addEventListener("contextmenu", function(cellMarked) {
+    cellMarked.preventDefault()
+
+})

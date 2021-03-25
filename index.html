@@ -9,36 +9,36 @@
 
 </head>
 
-<body>
 
-    <body onload="initGame()">
-        <!-- <img src="./img/mine.png" alt="mine"> -->
+<body onload="initGame()">
 
-        <!-- <h1>Mine Sweeper </h1> -->
-        <div class="dashboard">
-            <div class="time">Time:<span class="timer">0</span></div>
-            <!-- <div>Score:<span class=" score">0</span></div> -->
-            <button onclick="resetGame()" class="reset-btn">🙂</button>
-            <div class="levels">
-                <label for="male">Beginner:</label>
-                <input name="level" onclick="setLevel(0) " type="radio" value="Beginner"><br>
-                <label for=" male ">Medium:</label>
-                <input name="level" onclick="setLevel(1) " type="radio" value="Medium"><br>
-                <label for="male ">Expert</label>
-                <input name="level" onclick="setLevel(2) " type="radio" value="Expert"><br>
-            </div>
-
+    <div class="dashboard">
+        <div class="left-dash">
+            <div>Time: <span class="timer">0</span></div>
+            <div>Marked: <span class="score">0</span></div>
+            <div>Best Time: <span class="best-time">0</span></div>
 
         </div>
 
-        <table class="board ">
-            <tbody class="game-board "></tbody>
-        </table>
+        <button onclick="resetGame()" class="reset-btn">🙂</button>
+        <div class="levels">
+            <label for="male">Beginner:</label>
+            <input name="level" onclick="setLevel(0) " type="radio" value="Beginner"><br>
+            <label for=" male ">Medium:</label>
+            <input name="level" onclick="setLevel(1) " type="radio" value="Medium"><br>
+            <label for="male ">Expert:</label>
+            <input name="level" onclick="setLevel(2) " type="radio" value="Expert"><br>
+        </div>
+    </div>
+
+    <table class="board ">
+        <tbody class="game-board "></tbody>
+    </table>
 
 
-        <script src="./js/utils.js "></script>
-        <script src="./js/main.js "></script>
+    <script src="./js/utils.js "></script>
+    <script src="./js/main.js "></script>
 
-    </body>
+</body>
 
 </html>

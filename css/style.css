@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(204, 217, 230);
+    background-color: rgb(23, 26, 29);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
     align-items: center;
@@ -12,17 +12,15 @@ table {
 }
 
 .dashboard {
-    text-align: center;
     width: 600px;
     height: 50px;
     padding-bottom: 15px;
     display: inline-block;
-    background-color: deepskyblue;
-    /* position: absolute;
-    left: 25%; */
+    background-color: rgb(182, 214, 224);
+    margin-left: 660px;
 }
 
-.time {
+.left-dash {
     float: left;
 }
 
@@ -32,7 +30,7 @@ table {
     width: 50px;
     font-size: 30px;
     float: middle;
-    margin-left: 100px;
+    margin-left: 140px;
 }
 
 .levels {
@@ -40,11 +38,12 @@ table {
 }
 
 td {
-    border: rgb(255, 255, 255) solid 1px;
+    border: rgb(54, 214, 201) solid 1px;
     width: 60px;
     height: 60px;
     text-align: center;
     color: whitesmoke;
+    background-color: rgb(171, 224, 226);
 }
 
 td:hover {
