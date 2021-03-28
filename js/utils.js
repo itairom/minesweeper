@@ -34,7 +34,7 @@ function getEmptyCells() {
     for (var i = 0; i < gBoard.length; i++) {
         for (var j = 0; j < gBoard[0].length; j++) {
             var currCell = gBoard[i][j]
-            if (currCell.isMine === false) {
+            if (currCell.isMine === false && currCell.isShown === false) {
                 emptyCells.push({ i, j })
             }
         }

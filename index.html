@@ -11,16 +11,34 @@
 
 
 <body onload="initGame()">
-
+    <h1 class="title">Minesweeper</h1>
     <div class="dashboard">
         <div class="left-dash">
             <div>Time: <span class="timer">0</span></div>
             <div>Marked: <span class="score">0</span></div>
             <div>Best Time: <span class="best-time">0</span></div>
+            <div>Lives: <span class="lives">3</span></div>
+
+        </div>
+
+        <div class="get-hint">
+            <div class="bulbs-off">
+                <img class="bulb" onclick="setGlobalHint(this)" src="./img/bulb-off.png" alt="bulb">
+                <img class="bulb" onclick="setGlobalHint(this)" src="./img/bulb-off.png" alt="bulb">
+                <img class="bulb" onclick="setGlobalHint(this)" src="./img/bulb-off.png" alt="bulb">
+            </div>
+        </div>
+
+
+        <div class="safe">
+            <button class="safe-btn" onclick="setGlobalSafe()">Safe Click</button>
+            <div>Safe clicks: <span class="safe-count">3</span></div>
 
         </div>
 
         <button onclick="resetGame()" class="reset-btn">🙂</button>
+
+
         <div class="levels">
             <label for="male">Beginner:</label>
             <input name="level" onclick="setLevel(0) " type="radio" value="Beginner"><br>
